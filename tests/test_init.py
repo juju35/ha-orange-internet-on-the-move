@@ -211,3 +211,10 @@ async def test_unload(hass: HomeAssistant, portal: AiohttpClientMocker) -> None:
     entry = await setup_entry(hass)
     assert await hass.config_entries.async_unload(entry.entry_id)
     assert entry.state is ConfigEntryState.NOT_LOADED
+
+
+async def test_state_classes_of_rexave_kept(hass: HomeAssistant, portal: AiohttpClientMocker) -> None:
+    """The sensors that had a state class in rexave's integration keep it, so their statistics carry on."""
+    await setup_entry(hass)
+    for key in ("left_data", "initial_data"):
+        assert hass.states.get(_entity_id(hass, key)).attributes.get("state_class") == "measurement", key

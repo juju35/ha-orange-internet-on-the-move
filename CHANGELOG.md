@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 - 2026-11-12
+
+### Fixes
+- The plan data sensor has the `measurement` state class again, as in rexave's integration: Home Assistant no longer reports that its long-term statistics cannot be generated.
+
 ## 1.0.0 - 2026-11-12
 
 First stable release. No change since 0.1.0.

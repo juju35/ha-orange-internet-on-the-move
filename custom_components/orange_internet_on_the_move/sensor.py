@@ -65,7 +65,8 @@ SENSORS: tuple[OrangeIotmSensorDescription, ...] = (
         key="initial_data",
         translation_key="initial_data",
         device_class=SensorDeviceClass.DATA_SIZE,
-        # The plan size: no long-term statistics for a constant.
+        # Kept from rexave's integration: without it, Home Assistant flags its existing statistics.
+        state_class=SensorStateClass.MEASUREMENT,
         native_unit_of_measurement=UnitOfInformation.MEBIBYTES,
         suggested_unit_of_measurement=UnitOfInformation.GIBIBYTES,
         suggested_display_precision=2,
