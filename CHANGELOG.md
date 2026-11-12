@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.0 - 2026-11-12
+
+First stable release. No change since 0.1.0.
+
 ## 0.1.0 - 2026-11-12
 
 First release: a maintained rewrite of rexave/hass-orange-internet-on-the-move, usable as a drop-in replacement (same domain, devices and entity unique IDs; its config entries are migrated).
