@@ -28,6 +28,17 @@ def _entity_id(hass: HomeAssistant, key: str, device_id: str = DEVICE_ID) -> str
     return er.async_get(hass).async_get_entity_id("sensor", DOMAIN, f"{device_id}_{key}")
 
 
+def _device(hass: HomeAssistant) -> dr.DeviceEntry:
+    """The car's device; async_get_device is deprecated in recent Home Assistant, this works on all versions."""
+    [entry] = hass.config_entries.async_entries(DOMAIN)
+    [device] = [
+        device
+        for device in dr.async_entries_for_config_entry(dr.async_get(hass), entry.entry_id)
+        if (DOMAIN, DEVICE_ID) in device.identifiers
+    ]
+    return device
+
+
 async def _update(hass: HomeAssistant) -> None:
     async_fire_time_changed(hass, dt_util.utcnow() + timedelta(hours=1, seconds=1))
     await hass.async_block_till_done(wait_background_tasks=True)
@@ -49,7 +60,7 @@ async def test_sensors(hass: HomeAssistant, portal: AiohttpClientMocker) -> None
     assert hass.states.get(_entity_id(hass, "expiry_date")).state == "2099-01-01T00:00:00+00:00"
     assert hass.states.get(_entity_id(hass, "plan_type")).state == "onetime"
 
-    device = dr.async_get(hass).async_get_device(identifiers={(DOMAIN, DEVICE_ID)})
+    device = _device(hass)
     assert device.name == "Espace"
     assert device.manufacturer == "Orange"
     assert device.serial_number == SERIAL
@@ -132,7 +143,7 @@ async def test_removed_car_unavailable_and_deletable(
     mock_portal(aioclient_mock)
     entry = await setup_entry(hass)
     assert await async_setup_component(hass, "config", {})
-    device = dr.async_get(hass).async_get_device(identifiers={(DOMAIN, DEVICE_ID)})
+    device = _device(hass)
     client = await hass_ws_client(hass)
 
     async def remove() -> bool:
