@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Melde dich mit dem Konto des Orange Internet On the move-Portals an (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "E-Mail",
+          "password": "Passwort"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Erneut anmelden",
+        "description": "Das Portal hat das Passwort von {username} abgelehnt. Gib das aktuelle ein.",
+        "data": {
+          "password": "Passwort"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Aktualisiere die Zugangsdaten des Portalkontos.",
+        "data": {
+          "username": "E-Mail",
+          "password": "Passwort"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Ungültige E-Mail oder ungültiges Passwort.",
+      "cannot_connect": "Das Orange Internet On the move-Portal ist nicht erreichbar.",
+      "unknown": "Unerwarteter Fehler."
+    },
+    "abort": {
+      "already_configured": "Dieses Konto ist bereits eingerichtet.",
+      "reauth_successful": "Erneut angemeldet.",
+      "reconfigure_successful": "Zugangsdaten aktualisiert.",
+      "wrong_account": "Verwende dasselbe Konto oder füge das andere als neuen Eintrag hinzu."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Verbleibende Daten"
+      },
+      "used_data": {
+        "name": "Verbrauchte Daten"
+      },
+      "initial_data": {
+        "name": "Datenvolumen"
+      },
+      "left_data_percentage": {
+        "name": "Verbleibende Daten in Prozent"
+      },
+      "start_date": {
+        "name": "Tarifbeginn"
+      },
+      "expiry_date": {
+        "name": "Tarifende"
+      },
+      "plan_type": {
+        "name": "Tarifart"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "Das Portal hat die Zugangsdaten abgelehnt."
+    },
+    "update_failed": {
+      "message": "Aktualisierung vom Portal nicht möglich: {error}"
+    }
+  }
+}

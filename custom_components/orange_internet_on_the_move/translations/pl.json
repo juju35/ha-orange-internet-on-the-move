@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Zaloguj się kontem portalu Orange Internet On the move (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "E-mail",
+          "password": "Hasło"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Zaloguj się ponownie",
+        "description": "Portal odrzucił hasło konta {username}. Wpisz aktualne hasło.",
+        "data": {
+          "password": "Hasło"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Zaktualizuj dane logowania konta portalu.",
+        "data": {
+          "username": "E-mail",
+          "password": "Hasło"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Nieprawidłowy e-mail lub hasło.",
+      "cannot_connect": "Nie można połączyć się z portalem Orange Internet On the move.",
+      "unknown": "Nieoczekiwany błąd."
+    },
+    "abort": {
+      "already_configured": "To konto jest już skonfigurowane.",
+      "reauth_successful": "Zalogowano ponownie.",
+      "reconfigure_successful": "Dane logowania zaktualizowane.",
+      "wrong_account": "Użyj tego samego konta albo dodaj drugie jako nowy wpis."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Pozostałe dane"
+      },
+      "used_data": {
+        "name": "Zużyte dane"
+      },
+      "initial_data": {
+        "name": "Dane w pakiecie"
+      },
+      "left_data_percentage": {
+        "name": "Procent pozostałych danych"
+      },
+      "start_date": {
+        "name": "Początek pakietu"
+      },
+      "expiry_date": {
+        "name": "Koniec pakietu"
+      },
+      "plan_type": {
+        "name": "Rodzaj pakietu"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "Portal odrzucił dane logowania."
+    },
+    "update_failed": {
+      "message": "Nie można zaktualizować z portalu: {error}"
+    }
+  }
+}

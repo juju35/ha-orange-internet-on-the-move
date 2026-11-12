@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Logga in med kontot för Orange Internet On the move-portalen (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "E-post",
+          "password": "Lösenord"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Logga in igen",
+        "description": "Portalen avvisade lösenordet för {username}. Ange det nuvarande.",
+        "data": {
+          "password": "Lösenord"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Uppdatera inloggningsuppgifterna för portalkontot.",
+        "data": {
+          "username": "E-post",
+          "password": "Lösenord"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Ogiltig e-post eller ogiltigt lösenord.",
+      "cannot_connect": "Det går inte att nå Orange Internet On the move-portalen.",
+      "unknown": "Oväntat fel."
+    },
+    "abort": {
+      "already_configured": "Det här kontot är redan konfigurerat.",
+      "reauth_successful": "Inloggad igen.",
+      "reconfigure_successful": "Inloggningsuppgifterna har uppdaterats.",
+      "wrong_account": "Använd samma konto, eller lägg till det andra som en ny post."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Återstående data"
+      },
+      "used_data": {
+        "name": "Använd data"
+      },
+      "initial_data": {
+        "name": "Abonnemangets data"
+      },
+      "left_data_percentage": {
+        "name": "Återstående data i procent"
+      },
+      "start_date": {
+        "name": "Abonnemangets start"
+      },
+      "expiry_date": {
+        "name": "Abonnemangets slut"
+      },
+      "plan_type": {
+        "name": "Abonnemangstyp"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "Portalen avvisade inloggningsuppgifterna."
+    },
+    "update_failed": {
+      "message": "Det går inte att uppdatera från portalen: {error}"
+    }
+  }
+}

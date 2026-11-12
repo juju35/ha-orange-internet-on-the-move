@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Přihlaste se účtem portálu Orange Internet On the move (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "E-mail",
+          "password": "Heslo"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Přihlásit se znovu",
+        "description": "Portál odmítl heslo účtu {username}. Zadejte aktuální heslo.",
+        "data": {
+          "password": "Heslo"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Aktualizujte přihlašovací údaje účtu portálu.",
+        "data": {
+          "username": "E-mail",
+          "password": "Heslo"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Neplatný e-mail nebo heslo.",
+      "cannot_connect": "Portál Orange Internet On the move je nedostupný.",
+      "unknown": "Neočekávaná chyba."
+    },
+    "abort": {
+      "already_configured": "Tento účet je již nakonfigurován.",
+      "reauth_successful": "Opětovné přihlášení proběhlo úspěšně.",
+      "reconfigure_successful": "Přihlašovací údaje byly aktualizovány.",
+      "wrong_account": "Použijte stejný účet, nebo přidejte druhý jako novou položku."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Zbývající data"
+      },
+      "used_data": {
+        "name": "Spotřebovaná data"
+      },
+      "initial_data": {
+        "name": "Data v tarifu"
+      },
+      "left_data_percentage": {
+        "name": "Zbývající data v procentech"
+      },
+      "start_date": {
+        "name": "Začátek tarifu"
+      },
+      "expiry_date": {
+        "name": "Konec tarifu"
+      },
+      "plan_type": {
+        "name": "Typ tarifu"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "Portál odmítl přihlašovací údaje."
+    },
+    "update_failed": {
+      "message": "Aktualizace z portálu selhala: {error}"
+    }
+  }
+}

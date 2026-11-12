@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Prijavite se z računom portala Orange Internet On the move (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "E-pošta",
+          "password": "Geslo"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Ponovna prijava",
+        "description": "Portal je zavrnil geslo za {username}. Vnesite trenutno geslo.",
+        "data": {
+          "password": "Geslo"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Posodobite poverilnice računa portala.",
+        "data": {
+          "username": "E-pošta",
+          "password": "Geslo"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Neveljaven e-poštni naslov ali geslo.",
+      "cannot_connect": "Portal Orange Internet On the move ni dosegljiv.",
+      "unknown": "Nepričakovana napaka."
+    },
+    "abort": {
+      "already_configured": "Ta račun je že nastavljen.",
+      "reauth_successful": "Ponovna prijava je uspela.",
+      "reconfigure_successful": "Poverilnice so posodobljene.",
+      "wrong_account": "Uporabite isti račun ali dodajte drugega kot nov vnos."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Preostali podatki"
+      },
+      "used_data": {
+        "name": "Porabljeni podatki"
+      },
+      "initial_data": {
+        "name": "Podatki paketa"
+      },
+      "left_data_percentage": {
+        "name": "Odstotek preostalih podatkov"
+      },
+      "start_date": {
+        "name": "Začetek paketa"
+      },
+      "expiry_date": {
+        "name": "Konec paketa"
+      },
+      "plan_type": {
+        "name": "Vrsta paketa"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "Portal je zavrnil poverilnice."
+    },
+    "update_failed": {
+      "message": "Posodobitev s portala ni uspela: {error}"
+    }
+  }
+}

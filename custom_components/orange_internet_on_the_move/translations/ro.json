@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Conectează-te cu contul portalului Orange Internet On the move (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "E-mail",
+          "password": "Parolă"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Conectează-te din nou",
+        "description": "Portalul a respins parola pentru {username}. Introdu parola actuală.",
+        "data": {
+          "password": "Parolă"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Actualizează datele de autentificare ale contului portalului.",
+        "data": {
+          "username": "E-mail",
+          "password": "Parolă"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "E-mail sau parolă incorecte.",
+      "cannot_connect": "Portalul Orange Internet On the move nu poate fi accesat.",
+      "unknown": "Eroare neașteptată."
+    },
+    "abort": {
+      "already_configured": "Acest cont este deja configurat.",
+      "reauth_successful": "Conectare reușită.",
+      "reconfigure_successful": "Date de autentificare actualizate.",
+      "wrong_account": "Folosește același cont sau adaugă-l pe celălalt ca intrare nouă."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Date rămase"
+      },
+      "used_data": {
+        "name": "Date consumate"
+      },
+      "initial_data": {
+        "name": "Date incluse în abonament"
+      },
+      "left_data_percentage": {
+        "name": "Procent de date rămase"
+      },
+      "start_date": {
+        "name": "Începutul abonamentului"
+      },
+      "expiry_date": {
+        "name": "Sfârșitul abonamentului"
+      },
+      "plan_type": {
+        "name": "Tipul abonamentului"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "Portalul a respins datele de autentificare."
+    },
+    "update_failed": {
+      "message": "Actualizarea din portal a eșuat: {error}"
+    }
+  }
+}

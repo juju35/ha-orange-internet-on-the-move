@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Meld je aan met het account van het Orange Internet On the move-portaal (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "E-mail",
+          "password": "Wachtwoord"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Opnieuw aanmelden",
+        "description": "Het portaal heeft het wachtwoord van {username} geweigerd. Voer het huidige in.",
+        "data": {
+          "password": "Wachtwoord"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Werk de inloggegevens van het portaalaccount bij.",
+        "data": {
+          "username": "E-mail",
+          "password": "Wachtwoord"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Ongeldig e-mailadres of wachtwoord.",
+      "cannot_connect": "Het Orange Internet On the move-portaal is niet bereikbaar.",
+      "unknown": "Onverwachte fout."
+    },
+    "abort": {
+      "already_configured": "Dit account is al geconfigureerd.",
+      "reauth_successful": "Opnieuw aangemeld.",
+      "reconfigure_successful": "Inloggegevens bijgewerkt.",
+      "wrong_account": "Gebruik hetzelfde account of voeg het andere toe als nieuwe vermelding."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Resterende data"
+      },
+      "used_data": {
+        "name": "Verbruikte data"
+      },
+      "initial_data": {
+        "name": "Data van het abonnement"
+      },
+      "left_data_percentage": {
+        "name": "Percentage resterende data"
+      },
+      "start_date": {
+        "name": "Begin van het abonnement"
+      },
+      "expiry_date": {
+        "name": "Einde van het abonnement"
+      },
+      "plan_type": {
+        "name": "Type abonnement"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "Het portaal heeft de inloggegevens geweigerd."
+    },
+    "update_failed": {
+      "message": "Bijwerken vanaf het portaal mislukt: {error}"
+    }
+  }
+}

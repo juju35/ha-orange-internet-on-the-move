@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Prihláste sa účtom portálu Orange Internet On the move (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "E-mail",
+          "password": "Heslo"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Prihlásiť sa znova",
+        "description": "Portál odmietol heslo účtu {username}. Zadajte aktuálne heslo.",
+        "data": {
+          "password": "Heslo"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Aktualizujte prihlasovacie údaje účtu portálu.",
+        "data": {
+          "username": "E-mail",
+          "password": "Heslo"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Neplatný e-mail alebo heslo.",
+      "cannot_connect": "Portál Orange Internet On the move je nedostupný.",
+      "unknown": "Neočakávaná chyba."
+    },
+    "abort": {
+      "already_configured": "Tento účet je už nakonfigurovaný.",
+      "reauth_successful": "Opätovné prihlásenie bolo úspešné.",
+      "reconfigure_successful": "Prihlasovacie údaje boli aktualizované.",
+      "wrong_account": "Použite ten istý účet alebo pridajte druhý ako novú položku."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Zostávajúce dáta"
+      },
+      "used_data": {
+        "name": "Spotrebované dáta"
+      },
+      "initial_data": {
+        "name": "Dáta v balíku"
+      },
+      "left_data_percentage": {
+        "name": "Zostávajúce dáta v percentách"
+      },
+      "start_date": {
+        "name": "Začiatok balíka"
+      },
+      "expiry_date": {
+        "name": "Koniec balíka"
+      },
+      "plan_type": {
+        "name": "Typ balíka"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "Portál odmietol prihlasovacie údaje."
+    },
+    "update_failed": {
+      "message": "Aktualizácia z portálu zlyhala: {error}"
+    }
+  }
+}

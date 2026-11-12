@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Inicie sessão com a conta do portal Orange Internet On the move (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "E-mail",
+          "password": "Palavra-passe"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Iniciar sessão novamente",
+        "description": "O portal recusou a palavra-passe de {username}. Introduza a atual.",
+        "data": {
+          "password": "Palavra-passe"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Atualize as credenciais da conta do portal.",
+        "data": {
+          "username": "E-mail",
+          "password": "Palavra-passe"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "E-mail ou palavra-passe inválidos.",
+      "cannot_connect": "Não é possível contactar o portal Orange Internet On the move.",
+      "unknown": "Erro inesperado."
+    },
+    "abort": {
+      "already_configured": "Esta conta já está configurada.",
+      "reauth_successful": "Sessão iniciada novamente.",
+      "reconfigure_successful": "Credenciais atualizadas.",
+      "wrong_account": "Use a mesma conta ou adicione a outra como uma nova entrada."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Dados restantes"
+      },
+      "used_data": {
+        "name": "Dados consumidos"
+      },
+      "initial_data": {
+        "name": "Dados do plano"
+      },
+      "left_data_percentage": {
+        "name": "Percentagem de dados restantes"
+      },
+      "start_date": {
+        "name": "Início do plano"
+      },
+      "expiry_date": {
+        "name": "Fim do plano"
+      },
+      "plan_type": {
+        "name": "Tipo de plano"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "O portal recusou as credenciais."
+    },
+    "update_failed": {
+      "message": "Não é possível atualizar a partir do portal: {error}"
+    }
+  }
+}
