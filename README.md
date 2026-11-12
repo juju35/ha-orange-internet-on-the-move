@@ -12,7 +12,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/juju35/ha-orange-internet-on-the-move/blob/main/LICENSE)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/julienstep9)
 
-Home Assistant integration for **Orange Internet On the move**, the in-car mobile data plan of Renault vehicles managed on the [Orange Business portal](https://internetonthemove.orange-business.com/): data left, data used, plan size and dates, for every car of the account.
+Home Assistant integration for **Orange Internet On the move**, the in-car mobile data plan of Renault vehicles managed on the [Orange Business portal](https://internetonthemove.orange-business.com/renault/#/login): data left, data used, plan size and dates, for every car of the account.
 
 It is a maintained rewrite of [rexave/hass-orange-internet-on-the-move](https://github.com/rexave/hass-orange-internet-on-the-move) and a drop-in replacement for it: same domain, same devices and same entity unique IDs, so existing entities, their history and dashboards are kept (see [Migrating from rexave's integration](#migrating-from-rexaves-integration)).
 
@@ -31,7 +31,7 @@ It is a maintained rewrite of [rexave/hass-orange-internet-on-the-move](https://
 ## Prerequisites
 
 - Home Assistant 2025.8 or later
-- An account on the [Orange Internet On the move portal](https://internetonthemove.orange-business.com/)
+- An account on the [Orange Internet On the move portal](https://internetonthemove.orange-business.com/renault/#/login)
 
 ## Installation
 
