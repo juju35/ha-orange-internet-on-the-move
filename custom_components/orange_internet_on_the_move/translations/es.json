@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Inicia sesión con la cuenta del portal Orange Internet On the move (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "Correo electrónico",
+          "password": "Contraseña"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Iniciar sesión de nuevo",
+        "description": "El portal rechazó la contraseña de {username}. Introduce la actual.",
+        "data": {
+          "password": "Contraseña"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Actualiza las credenciales de la cuenta del portal.",
+        "data": {
+          "username": "Correo electrónico",
+          "password": "Contraseña"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Correo electrónico o contraseña no válidos.",
+      "cannot_connect": "No se puede contactar con el portal Orange Internet On the move.",
+      "unknown": "Error inesperado."
+    },
+    "abort": {
+      "already_configured": "Esta cuenta ya está configurada.",
+      "reauth_successful": "Sesión iniciada de nuevo.",
+      "reconfigure_successful": "Credenciales actualizadas.",
+      "wrong_account": "Usa la misma cuenta o añade la otra como una entrada nueva."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Datos restantes"
+      },
+      "used_data": {
+        "name": "Datos consumidos"
+      },
+      "initial_data": {
+        "name": "Datos del plan"
+      },
+      "left_data_percentage": {
+        "name": "Porcentaje de datos restantes"
+      },
+      "start_date": {
+        "name": "Inicio del plan"
+      },
+      "expiry_date": {
+        "name": "Fin del plan"
+      },
+      "plan_type": {
+        "name": "Tipo de plan"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "El portal rechazó las credenciales."
+    },
+    "update_failed": {
+      "message": "No se puede actualizar desde el portal: {error}"
+    }
+  }
+}

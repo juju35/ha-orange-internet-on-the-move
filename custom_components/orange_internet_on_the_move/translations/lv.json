@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Pierakstieties ar portāla Orange Internet On the move kontu (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "E-pasts",
+          "password": "Parole"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Pierakstīties vēlreiz",
+        "description": "Portāls noraidīja {username} paroli. Ievadiet pašreizējo paroli.",
+        "data": {
+          "password": "Parole"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Atjauniniet portāla konta pieteikšanās datus.",
+        "data": {
+          "username": "E-pasts",
+          "password": "Parole"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Nederīgs e-pasts vai parole.",
+      "cannot_connect": "Portāls Orange Internet On the move nav sasniedzams.",
+      "unknown": "Negaidīta kļūda."
+    },
+    "abort": {
+      "already_configured": "Šis konts jau ir konfigurēts.",
+      "reauth_successful": "Pieteikšanās atkārtoti izdevās.",
+      "reconfigure_successful": "Pieteikšanās dati atjaunināti.",
+      "wrong_account": "Izmantojiet to pašu kontu vai pievienojiet otru kā jaunu ierakstu."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Atlikušie dati"
+      },
+      "used_data": {
+        "name": "Izlietotie dati"
+      },
+      "initial_data": {
+        "name": "Plāna dati"
+      },
+      "left_data_percentage": {
+        "name": "Atlikušo datu procents"
+      },
+      "start_date": {
+        "name": "Plāna sākums"
+      },
+      "expiry_date": {
+        "name": "Plāna beigas"
+      },
+      "plan_type": {
+        "name": "Plāna veids"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "Portāls noraidīja pieteikšanās datus."
+    },
+    "update_failed": {
+      "message": "Neizdevās atjaunināt no portāla: {error}"
+    }
+  }
+}

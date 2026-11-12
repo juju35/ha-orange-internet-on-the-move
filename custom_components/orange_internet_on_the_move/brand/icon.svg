@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Tile: Orange brand color (Orange logo); glyph: Renault 2021 diamond; badge: mobile data (up/down transfer). -->
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff8f26"/><stop offset="1" stop-color="#ff7900"/></linearGradient></defs>
+  <rect x="0" y="0" width="512" height="512" rx="112.64" ry="112.64" fill="url(#g)"/>
+  <g transform="translate(118 72) scale(0.2295) translate(-44.223142 -76.682141)" fill="#ffffff">
+    <path d="M 596.21181,76.682144 241.47726,730.12649 467.48427,1150.9771 518.51898,1055.9436 343.54667,730.12649 645.33855,168.16211 947.12599,730.12649 596.20737,1383.5708 H 693.3045 L 1044.2231,730.12649 693.3045,76.682144 Z"/>
+    <path d="M 492.23449,1383.5709 846.96895,730.1265 620.96195,309.27585 569.92725,404.30945 744.89955,730.1265 443.10774,1292.0909 141.32029,730.1265 492.23888,76.682141 H 395.14173 L 44.223142,730.1265 395.14173,1383.5709 Z"/>
+  </g>
+  <circle cx="392" cy="392" r="100" fill="#ffffff"/>
+  <circle cx="392" cy="392" r="84" fill="#000000"/>
+  <g fill="#ff7900">
+    <rect x="352" y="380" width="20" height="62"/>
+    <polygon points="328,388 362,340 396,388"/>
+    <rect x="412" y="342" width="20" height="62"/>
+    <polygon points="388,396 422,444 456,396"/>
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Accedi con l'account del portale Orange Internet On the move (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "E-mail",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Accedi di nuovo",
+        "description": "Il portale ha rifiutato la password di {username}. Inserisci quella attuale.",
+        "data": {
+          "password": "Password"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Aggiorna le credenziali dell'account del portale.",
+        "data": {
+          "username": "E-mail",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "E-mail o password non validi.",
+      "cannot_connect": "Impossibile raggiungere il portale Orange Internet On the move.",
+      "unknown": "Errore imprevisto."
+    },
+    "abort": {
+      "already_configured": "Questo account è già configurato.",
+      "reauth_successful": "Accesso effettuato di nuovo.",
+      "reconfigure_successful": "Credenziali aggiornate.",
+      "wrong_account": "Usa lo stesso account oppure aggiungi l'altro come nuova voce."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Dati residui"
+      },
+      "used_data": {
+        "name": "Dati consumati"
+      },
+      "initial_data": {
+        "name": "Dati del piano"
+      },
+      "left_data_percentage": {
+        "name": "Percentuale di dati residui"
+      },
+      "start_date": {
+        "name": "Inizio del piano"
+      },
+      "expiry_date": {
+        "name": "Scadenza del piano"
+      },
+      "plan_type": {
+        "name": "Tipo di piano"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "Il portale ha rifiutato le credenziali."
+    },
+    "update_failed": {
+      "message": "Impossibile aggiornare dal portale: {error}"
+    }
+  }
+}

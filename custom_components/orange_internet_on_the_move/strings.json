@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Sign in with the account of the Orange Internet On the move portal (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Sign in again",
+        "description": "The portal rejected the password of {username}. Enter the current one.",
+        "data": {
+          "password": "Password"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Update the credentials of the portal account.",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email or password.",
+      "cannot_connect": "Cannot reach the Orange Internet On the move portal.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This account is already configured.",
+      "reauth_successful": "Signed in again.",
+      "reconfigure_successful": "Credentials updated.",
+      "wrong_account": "Use the same account, or add the other one as a new entry."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Data left"
+      },
+      "used_data": {
+        "name": "Data used"
+      },
+      "initial_data": {
+        "name": "Plan data"
+      },
+      "left_data_percentage": {
+        "name": "Data left percentage"
+      },
+      "start_date": {
+        "name": "Plan start"
+      },
+      "expiry_date": {
+        "name": "Plan expiry"
+      },
+      "plan_type": {
+        "name": "Plan type"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "The portal rejected the credentials."
+    },
+    "update_failed": {
+      "message": "Cannot update from the portal: {error}"
+    }
+  }
+}

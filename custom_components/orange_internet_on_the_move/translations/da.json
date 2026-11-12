@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Log ind med kontoen til Orange Internet On the move-portalen (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "E-mail",
+          "password": "Adgangskode"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Log ind igen",
+        "description": "Portalen afviste adgangskoden til {username}. Indtast den nuværende.",
+        "data": {
+          "password": "Adgangskode"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Opdater loginoplysningerne til portalkontoen.",
+        "data": {
+          "username": "E-mail",
+          "password": "Adgangskode"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Ugyldig e-mail eller adgangskode.",
+      "cannot_connect": "Orange Internet On the move-portalen kan ikke nås.",
+      "unknown": "Uventet fejl."
+    },
+    "abort": {
+      "already_configured": "Denne konto er allerede konfigureret.",
+      "reauth_successful": "Logget ind igen.",
+      "reconfigure_successful": "Loginoplysninger opdateret.",
+      "wrong_account": "Brug den samme konto, eller tilføj den anden som en ny post."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Resterende data"
+      },
+      "used_data": {
+        "name": "Brugt data"
+      },
+      "initial_data": {
+        "name": "Abonnementets data"
+      },
+      "left_data_percentage": {
+        "name": "Resterende data i procent"
+      },
+      "start_date": {
+        "name": "Abonnementets start"
+      },
+      "expiry_date": {
+        "name": "Abonnementets udløb"
+      },
+      "plan_type": {
+        "name": "Abonnementstype"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "Portalen afviste loginoplysningerne."
+    },
+    "update_failed": {
+      "message": "Kan ikke opdatere fra portalen: {error}"
+    }
+  }
+}

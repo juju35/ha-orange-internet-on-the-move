@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Connectez-vous avec le compte du portail Orange Internet On the move (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "E-mail",
+          "password": "Mot de passe"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Se reconnecter",
+        "description": "Le portail a refusé le mot de passe de {username}. Saisissez le mot de passe actuel.",
+        "data": {
+          "password": "Mot de passe"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Mettez à jour les identifiants du compte du portail.",
+        "data": {
+          "username": "E-mail",
+          "password": "Mot de passe"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "E-mail ou mot de passe incorrect.",
+      "cannot_connect": "Impossible de joindre le portail Orange Internet On the move.",
+      "unknown": "Erreur inattendue."
+    },
+    "abort": {
+      "already_configured": "Ce compte est déjà configuré.",
+      "reauth_successful": "Reconnexion réussie.",
+      "reconfigure_successful": "Identifiants mis à jour.",
+      "wrong_account": "Utilisez le même compte, ou ajoutez l'autre comme nouvelle entrée."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Data restante"
+      },
+      "used_data": {
+        "name": "Data consommée"
+      },
+      "initial_data": {
+        "name": "Data du forfait"
+      },
+      "left_data_percentage": {
+        "name": "Pourcentage de data restante"
+      },
+      "start_date": {
+        "name": "Début du forfait"
+      },
+      "expiry_date": {
+        "name": "Fin du forfait"
+      },
+      "plan_type": {
+        "name": "Type de forfait"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "Le portail a refusé les identifiants."
+    },
+    "update_failed": {
+      "message": "Mise à jour depuis le portail impossible : {error}"
+    }
+  }
+}

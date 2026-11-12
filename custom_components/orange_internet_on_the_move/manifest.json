@@ -1,0 +1,14 @@
+{
+  "domain": "orange_internet_on_the_move",
+  "name": "Orange Internet On the move",
+  "codeowners": [
+    "@juju35"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/juju35/ha-orange-internet-on-the-move",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/juju35/ha-orange-internet-on-the-move/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

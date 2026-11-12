@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Συνδεθείτε με τον λογαριασμό της πύλης Orange Internet On the move (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "Email",
+          "password": "Κωδικός πρόσβασης"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Νέα σύνδεση",
+        "description": "Η πύλη απέρριψε τον κωδικό του {username}. Εισαγάγετε τον τρέχοντα.",
+        "data": {
+          "password": "Κωδικός πρόσβασης"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Ενημερώστε τα στοιχεία σύνδεσης του λογαριασμού της πύλης.",
+        "data": {
+          "username": "Email",
+          "password": "Κωδικός πρόσβασης"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Μη έγκυρο email ή κωδικός πρόσβασης.",
+      "cannot_connect": "Η πύλη Orange Internet On the move δεν είναι προσβάσιμη.",
+      "unknown": "Μη αναμενόμενο σφάλμα."
+    },
+    "abort": {
+      "already_configured": "Αυτός ο λογαριασμός έχει ήδη ρυθμιστεί.",
+      "reauth_successful": "Η σύνδεση έγινε ξανά.",
+      "reconfigure_successful": "Τα στοιχεία σύνδεσης ενημερώθηκαν.",
+      "wrong_account": "Χρησιμοποιήστε τον ίδιο λογαριασμό ή προσθέστε τον άλλο ως νέα καταχώριση."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Υπόλοιπο δεδομένων"
+      },
+      "used_data": {
+        "name": "Δεδομένα που χρησιμοποιήθηκαν"
+      },
+      "initial_data": {
+        "name": "Δεδομένα πακέτου"
+      },
+      "left_data_percentage": {
+        "name": "Ποσοστό υπολοίπου δεδομένων"
+      },
+      "start_date": {
+        "name": "Έναρξη πακέτου"
+      },
+      "expiry_date": {
+        "name": "Λήξη πακέτου"
+      },
+      "plan_type": {
+        "name": "Τύπος πακέτου"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "Η πύλη απέρριψε τα στοιχεία σύνδεσης."
+    },
+    "update_failed": {
+      "message": "Αδύνατη η ενημέρωση από την πύλη: {error}"
+    }
+  }
+}

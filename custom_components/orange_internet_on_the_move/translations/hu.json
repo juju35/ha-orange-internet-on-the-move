@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Jelentkezz be a(z) Orange Internet On the move portál fiókjával (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "E-mail",
+          "password": "Jelszó"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Újbóli bejelentkezés",
+        "description": "A portál elutasította {username} jelszavát. Add meg a jelenlegit.",
+        "data": {
+          "password": "Jelszó"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Frissítsd a portálfiók bejelentkezési adatait.",
+        "data": {
+          "username": "E-mail",
+          "password": "Jelszó"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Érvénytelen e-mail vagy jelszó.",
+      "cannot_connect": "A(z) Orange Internet On the move portál nem érhető el.",
+      "unknown": "Váratlan hiba."
+    },
+    "abort": {
+      "already_configured": "Ez a fiók már be van állítva.",
+      "reauth_successful": "Sikeres újbóli bejelentkezés.",
+      "reconfigure_successful": "Bejelentkezési adatok frissítve.",
+      "wrong_account": "Ugyanazt a fiókot használd, vagy add hozzá a másikat új bejegyzésként."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Maradék adat"
+      },
+      "used_data": {
+        "name": "Felhasznált adat"
+      },
+      "initial_data": {
+        "name": "Csomag adatkerete"
+      },
+      "left_data_percentage": {
+        "name": "Maradék adat százalékban"
+      },
+      "start_date": {
+        "name": "Csomag kezdete"
+      },
+      "expiry_date": {
+        "name": "Csomag lejárata"
+      },
+      "plan_type": {
+        "name": "Csomag típusa"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "A portál elutasította a bejelentkezési adatokat."
+    },
+    "update_failed": {
+      "message": "Nem sikerült frissíteni a portálról: {error}"
+    }
+  }
+}

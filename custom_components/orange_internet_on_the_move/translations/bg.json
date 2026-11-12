@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Влезте с акаунта за портала Orange Internet On the move (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "Имейл",
+          "password": "Парола"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Влезте отново",
+        "description": "Порталът отхвърли паролата на {username}. Въведете текущата.",
+        "data": {
+          "password": "Парола"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Обновете данните за вход на акаунта в портала.",
+        "data": {
+          "username": "Имейл",
+          "password": "Парола"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Невалиден имейл или парола.",
+      "cannot_connect": "Порталът Orange Internet On the move е недостъпен.",
+      "unknown": "Неочаквана грешка."
+    },
+    "abort": {
+      "already_configured": "Този акаунт вече е конфигуриран.",
+      "reauth_successful": "Влязохте отново.",
+      "reconfigure_successful": "Данните за вход са обновени.",
+      "wrong_account": "Използвайте същия акаунт или добавете другия като нов запис."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Оставащи данни"
+      },
+      "used_data": {
+        "name": "Изразходвани данни"
+      },
+      "initial_data": {
+        "name": "Данни в плана"
+      },
+      "left_data_percentage": {
+        "name": "Процент оставащи данни"
+      },
+      "start_date": {
+        "name": "Начало на плана"
+      },
+      "expiry_date": {
+        "name": "Край на плана"
+      },
+      "plan_type": {
+        "name": "Вид план"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "Порталът отхвърли данните за вход."
+    },
+    "update_failed": {
+      "message": "Неуспешно обновяване от портала: {error}"
+    }
+  }
+}

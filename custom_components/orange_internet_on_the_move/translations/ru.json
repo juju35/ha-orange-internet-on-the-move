@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Войдите с учётной записью портала Orange Internet On the move (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "Эл. почта",
+          "password": "Пароль"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Повторный вход",
+        "description": "Портал отклонил пароль {username}. Введите текущий пароль.",
+        "data": {
+          "password": "Пароль"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Обновите учётные данные портала.",
+        "data": {
+          "username": "Эл. почта",
+          "password": "Пароль"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Неверная эл. почта или пароль.",
+      "cannot_connect": "Портал Orange Internet On the move недоступен.",
+      "unknown": "Непредвиденная ошибка."
+    },
+    "abort": {
+      "already_configured": "Эта учётная запись уже настроена.",
+      "reauth_successful": "Вход выполнен повторно.",
+      "reconfigure_successful": "Учётные данные обновлены.",
+      "wrong_account": "Используйте ту же учётную запись или добавьте другую как новую запись."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Оставшиеся данные"
+      },
+      "used_data": {
+        "name": "Израсходованные данные"
+      },
+      "initial_data": {
+        "name": "Объём тарифа"
+      },
+      "left_data_percentage": {
+        "name": "Оставшиеся данные в процентах"
+      },
+      "start_date": {
+        "name": "Начало тарифа"
+      },
+      "expiry_date": {
+        "name": "Окончание тарифа"
+      },
+      "plan_type": {
+        "name": "Тип тарифа"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "Портал отклонил учётные данные."
+    },
+    "update_failed": {
+      "message": "Не удалось обновить данные с портала: {error}"
+    }
+  }
+}

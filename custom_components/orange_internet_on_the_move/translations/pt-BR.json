@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Orange Internet On the move",
+        "description": "Entre com a conta do portal Orange Internet On the move (internetonthemove.orange-business.com).",
+        "data": {
+          "username": "E-mail",
+          "password": "Senha"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Entrar novamente",
+        "description": "O portal recusou a senha de {username}. Digite a atual.",
+        "data": {
+          "password": "Senha"
+        }
+      },
+      "reconfigure": {
+        "title": "Orange Internet On the move",
+        "description": "Atualize as credenciais da conta do portal.",
+        "data": {
+          "username": "E-mail",
+          "password": "Senha"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "E-mail ou senha inválidos.",
+      "cannot_connect": "Não foi possível acessar o portal Orange Internet On the move.",
+      "unknown": "Erro inesperado."
+    },
+    "abort": {
+      "already_configured": "Esta conta já está configurada.",
+      "reauth_successful": "Login feito novamente.",
+      "reconfigure_successful": "Credenciais atualizadas.",
+      "wrong_account": "Use a mesma conta ou adicione a outra como uma nova entrada."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "left_data": {
+        "name": "Dados restantes"
+      },
+      "used_data": {
+        "name": "Dados consumidos"
+      },
+      "initial_data": {
+        "name": "Dados do plano"
+      },
+      "left_data_percentage": {
+        "name": "Porcentagem de dados restantes"
+      },
+      "start_date": {
+        "name": "Início do plano"
+      },
+      "expiry_date": {
+        "name": "Fim do plano"
+      },
+      "plan_type": {
+        "name": "Tipo de plano"
+      }
+    }
+  },
+  "exceptions": {
+    "invalid_auth": {
+      "message": "O portal recusou as credenciais."
+    },
+    "update_failed": {
+      "message": "Não foi possível atualizar a partir do portal: {error}"
+    }
+  }
+}
