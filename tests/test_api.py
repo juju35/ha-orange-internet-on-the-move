@@ -150,3 +150,60 @@ async def test_credentials_never_logged(
     await _client(hass).async_get_data(NOW)
     assert PASSWORD not in caplog.text
     assert TOKEN not in caplog.text
+
+
+def test_parse_helpers() -> None:
+    from custom_components.orange_internet_on_the_move.api import _parse_datetime, _parse_number
+
+    assert _parse_datetime("2026-05-01T10:00:00") == datetime(2026, 5, 1, 10, tzinfo=UTC)  # no offset: UTC
+    assert _parse_datetime("2026-05-01T10:00:00+02:00").utcoffset().total_seconds() == 7200
+    assert _parse_datetime("not a date") is None
+    assert _parse_datetime("") is None
+    assert _parse_datetime(None) is None
+    assert _parse_number(5) == 5.0
+    assert _parse_number("4.5") == 4.5
+    assert _parse_number("n/a") is None
+    assert _parse_number(True) is None  # a boolean is not an amount
+    assert _parse_number(None) is None
+
+
+async def test_device_and_plan_payloads(hass: HomeAssistant, aioclient_mock: AiohttpClientMocker) -> None:
+    # Entries without an id, or that are not objects, are skipped.
+    mock_portal(
+        aioclient_mock,
+        devices=[{"id": ""}, "junk", {"id": 42, "tag": "", "serial_number": None}],
+        plans={"42": [{"type": "x"}, "junk"]},
+    )
+    data = await _client(hass).async_get_data(NOW)
+    assert list(data) == ["42"]
+    assert data["42"].device.tag is None
+    assert data["42"].plan.plan_type == "x"
+    mock_portal(aioclient_mock, plans={DEVICE_ID: {"error": "x"}})  # type: ignore[dict-item]
+    with pytest.raises(OrangeIotmError):
+        await _client(hass).async_get_plans(DEVICE_ID)
+
+
+async def test_plan_path_keeps_the_device_id_one_segment(
+    hass: HomeAssistant, aioclient_mock: AiohttpClientMocker
+) -> None:
+    mock_portal(aioclient_mock, plans={"a%2F..%2Fb": []})
+    assert await _client(hass).async_get_plans("a/../b") == []
+
+
+async def test_http_error_on_a_read(hass: HomeAssistant, aioclient_mock: AiohttpClientMocker) -> None:
+    mock_portal(aioclient_mock)
+    aioclient_mock.clear_requests()
+    aioclient_mock.post(f"{BASE_URL}{LOGIN_PATH}", headers={"x-auth-token": TOKEN})
+    aioclient_mock.get(f"{BASE_URL}{DEVICES_PATH}", status=500)
+    with pytest.raises(OrangeIotmError) as err:
+        await _client(hass).async_get_devices()
+    assert not isinstance(err.value, OrangeIotmAuthError)
+
+
+@pytest.mark.parametrize("exc", [aiohttp.ClientError(), TimeoutError(), ValueError("bad json")])
+async def test_network_errors_on_a_read(hass: HomeAssistant, aioclient_mock: AiohttpClientMocker, exc) -> None:
+    aioclient_mock.post(f"{BASE_URL}{LOGIN_PATH}", headers={"x-auth-token": TOKEN})
+    aioclient_mock.get(f"{BASE_URL}{DEVICES_PATH}", exc=exc)
+    with pytest.raises(OrangeIotmError) as err:
+        await _client(hass).async_get_devices()
+    assert not isinstance(err.value, OrangeIotmAuthError)
