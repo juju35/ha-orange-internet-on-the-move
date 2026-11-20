@@ -12,6 +12,11 @@
   <img src="https://raw.githubusercontent.com/juju35/ha-orange-internet-on-the-move/main/custom_components/orange_internet_on_the_move/brand/icon@2x.png" alt="Orange Internet On the move" width="120" height="120">
 </p>
 
+<p align="center">
+  <a href="https://www.orange-business.com/"><img src="https://raw.githubusercontent.com/juju35/ha-orange-internet-on-the-move/main/images/orange.svg" alt="Orange" height="48"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://www.renault.com/"><img src="https://raw.githubusercontent.com/juju35/ha-orange-internet-on-the-move/main/images/renault.png" alt="Renault" width="48"></a>
+</p>
+
 Home Assistant integration for **Orange Internet On the move**, the in-car mobile data plan of Renault vehicles managed on the [Orange Business portal](https://internetonthemove.orange-business.com/renault/#/login): data left, data used, plan size and dates, for every car of the account.
 
 It is a maintained rewrite of [rexave/hass-orange-internet-on-the-move](https://github.com/rexave/hass-orange-internet-on-the-move) and a drop-in replacement for it: same domain, same devices and same entity unique IDs, so existing entities, their history and dashboards are kept (see [Migrating from rexave's integration](#migrating-from-rexaves-integration)).
@@ -25,7 +30,7 @@ It is a maintained rewrite of [rexave/hass-orange-internet-on-the-move](https://
 - Data left, data used, plan data, percentage left, plan start, plan expiry and plan type
 - One login reused across updates (logged in again only when the portal rejects the token), the plans of all cars fetched in parallel, hourly polling
 - Reauthentication and reconfiguration from the UI, entities unavailable (not stale) when the portal cannot be reached
-- Diagnostics with the credentials, serial numbers and device IDs redacted; credentials and tokens never logged
+- Diagnostics with the credentials, serial numbers, device IDs and car tags redacted; credentials and tokens never logged
 - English, French, German, Spanish, Serbian (Cyrillic and Latin), Italian, Dutch, Portuguese (European and Brazilian), Polish, Romanian, Danish, Swedish, Bulgarian, Russian, Ukrainian, Hungarian, Slovak, Czech, Slovenian, Latvian and Greek
 
 ## Prerequisites
@@ -95,7 +100,7 @@ The existing entry is migrated on its own: the credentials move to the standard 
 
 The integration logs in to the portal (`/user-api/login`, HTTP basic auth) and keeps the token it returns. Every hour it lists the devices of the account (`/user-api/devices`) and fetches their plans (`/user-api/devices/<id>/consumption`) in parallel, then keeps the plan running now. When the portal rejects the token it logs in again once; when it rejects the credentials, Home Assistant asks to sign in again.
 
-To report a problem, download the diagnostics from **Settings → Devices & services → Orange Internet On the move → ⋮ → Download diagnostics** and attach them to the issue. Credentials, serial numbers and device IDs are redacted.
+To report a problem, download the diagnostics from **Settings → Devices & services → Orange Internet On the move → ⋮ → Download diagnostics** and attach them to the issue. Credentials, serial numbers, device IDs and car tags (which may be a licence plate) are redacted.
 
 To debug:
 

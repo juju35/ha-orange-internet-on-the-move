@@ -4,7 +4,8 @@
 
 ### Fixes
 - The device id the portal sends is URL-quoted in the consumption request, so that it always stays one path segment.
-- README: the logo is under the badges, as on the other repositories.
+- Diagnostics also redact the car's tag on the portal, which may be a licence plate.
+- README: the logo is under the badges, as on the other repositories, followed by the Orange and Renault logos.
 
 ### Maintenance
 - Tests for the parsing of the portal's devices, plans, dates and numbers and for its read errors: the integration is fully covered.
