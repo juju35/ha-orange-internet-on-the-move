@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.2 - 2026-11-20
+
+### Fixes
+- The device id the portal sends is URL-quoted in the consumption request, so that it always stays one path segment.
+- README: the logo is under the badges, as on the other repositories.
+
+### Maintenance
+- Tests for the parsing of the portal's devices, plans, dates and numbers and for its read errors: the integration is fully covered.
+
 ## 1.0.1 - 2026-11-12
 
 ### Fixes
