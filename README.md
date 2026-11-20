@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/juju35/ha-orange-internet-on-the-move/main/custom_components/orange_internet_on_the_move/brand/icon@2x.png" alt="Orange Internet On the move" width="128" height="128">
-</p>
-
 # ha-orange-internet-on-the-move
 
 [![Marketplace](https://img.shields.io/badge/Marketplace-Custom-41BDF5.svg)](https://www.home-assistant.io/integrations/marketplace/)
@@ -11,6 +7,10 @@
 [![Release](https://img.shields.io/github/v/release/juju35/ha-orange-internet-on-the-move)](https://github.com/juju35/ha-orange-internet-on-the-move/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/juju35/ha-orange-internet-on-the-move/blob/main/LICENSE)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/julienstep9)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/juju35/ha-orange-internet-on-the-move/main/custom_components/orange_internet_on_the_move/brand/icon@2x.png" alt="Orange Internet On the move" width="120" height="120">
+</p>
 
 Home Assistant integration for **Orange Internet On the move**, the in-car mobile data plan of Renault vehicles managed on the [Orange Business portal](https://internetonthemove.orange-business.com/renault/#/login): data left, data used, plan size and dates, for every car of the account.
 
