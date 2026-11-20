@@ -11,7 +11,8 @@ from homeassistant.core import HomeAssistant
 
 from .coordinator import OrangeIotmConfigEntry
 
-TO_REDACT = {CONF_USERNAME, CONF_PASSWORD, "serial_number", "device_id"}
+# `tag` is the name the owner gave the car on the portal: it may be a licence plate.
+TO_REDACT = {CONF_USERNAME, CONF_PASSWORD, "serial_number", "device_id", "tag"}
 
 
 async def async_get_config_entry_diagnostics(hass: HomeAssistant, entry: OrangeIotmConfigEntry) -> dict[str, Any]:

@@ -12,6 +12,7 @@ import logging
 from dataclasses import dataclass
 from datetime import UTC, datetime
 from typing import Any
+from urllib.parse import quote
 
 import aiohttp
 
@@ -218,7 +219,8 @@ class OrangeIotmClient:
 
     async def async_get_plans(self, device_id: str) -> list[Plan]:
         """Every plan of one device."""
-        raw = await self._async_get_json(CONSUMPTION_PATH.format(device_id=device_id))
+        # The id comes from the portal: quoted, so that it stays one path segment.
+        raw = await self._async_get_json(CONSUMPTION_PATH.format(device_id=quote(device_id, safe="")))
         if not isinstance(raw, list):
             raise OrangeIotmError("Unexpected consumption data from the portal")
         return [_parse_plan(item) for item in raw if isinstance(item, dict)]

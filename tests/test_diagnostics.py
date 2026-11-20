@@ -22,5 +22,5 @@ async def test_diagnostics_redacted(hass: HomeAssistant, hass_client, portal: Ai
         assert secret not in dumped
     assert diag["entry"]["data"] == {"username": REDACTED, "password": REDACTED}
     [device] = diag["devices"]
-    assert device["device"]["tag"] == "Espace"
+    assert device["device"]["tag"] == REDACTED
     assert device["plan"]["left_percentage"] == 76
