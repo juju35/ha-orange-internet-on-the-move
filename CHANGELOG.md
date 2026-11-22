@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.3 - 2026-11-22
+
+### Maintenance
+- README: a Screenshots section showing what the integration brings to Vehicle Card, light and dark (the showcase site shows them too).
+
 ## 1.0.2 - 2026-11-20
 
 ### Fixes
