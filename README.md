@@ -33,6 +33,14 @@ It is a maintained rewrite of [rexave/hass-orange-internet-on-the-move](https://
 - Diagnostics with the credentials, serial numbers, device IDs and car tags redacted; credentials and tokens never logged
 - English, French, German, Spanish, Serbian (Cyrillic and Latin), Italian, Dutch, Portuguese (European and Brazilian), Polish, Romanian, Danish, Swedish, Bulgarian, Russian, Ukrainian, Hungarian, Slovak, Czech, Slovenian, Latvian and Greek
 
+## Screenshots
+
+The car's data plan shown by [Vehicle Card](https://github.com/juju35/ha-vehicle-card): data left, percentage of the allowance and renewal date, in its **Orange Internet On the move** section.
+
+| Light | Dark |
+|---|---|
+| <img src="https://raw.githubusercontent.com/juju35/ha-orange-internet-on-the-move/main/screenshots/vehicle-card.png" alt="Orange Internet On the move section of Vehicle Card" width="400"> | <img src="https://raw.githubusercontent.com/juju35/ha-orange-internet-on-the-move/main/screenshots/vehicle-card-dark.png" alt="Orange Internet On the move section of Vehicle Card, dark theme" width="400"> |
+
 ## Prerequisites
 
 - Home Assistant 2025.8 or later
