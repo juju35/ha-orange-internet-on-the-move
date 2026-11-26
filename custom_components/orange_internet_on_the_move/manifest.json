@@ -1,6 +1,7 @@
 {
   "domain": "orange_internet_on_the_move",
   "name": "Orange Internet On the move",
+  "categories": ["vehicles_transport.cars_evs"],
   "codeowners": [
     "@juju35"
   ],
