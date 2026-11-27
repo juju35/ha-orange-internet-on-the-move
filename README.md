@@ -39,7 +39,7 @@ The car's data plan shown by [Vehicle Card](https://github.com/juju35/ha-vehicle
 
 | Light | Dark |
 |---|---|
-| <img src="https://raw.githubusercontent.com/juju35/ha-orange-internet-on-the-move/main/screenshots/vehicle-card.png" alt="Orange Internet On the move section of Vehicle Card" width="400"> | <img src="https://raw.githubusercontent.com/juju35/ha-orange-internet-on-the-move/main/screenshots/vehicle-card-dark.png" alt="Orange Internet On the move section of Vehicle Card, dark theme" width="400"> |
+| <img src="https://raw.githubusercontent.com/juju35/ha-vehicle-card/main/screenshots/espace.png" alt="Orange Internet On the move section of Vehicle Card" width="400"> | <img src="https://raw.githubusercontent.com/juju35/ha-vehicle-card/main/screenshots/espace-dark.png" alt="Orange Internet On the move section of Vehicle Card, dark theme" width="400"> |
 
 ## Prerequisites
 
